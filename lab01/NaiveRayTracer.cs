@@ -26,10 +26,10 @@ public class NaiveRayTracer : MonoBehaviour
     void Start()
     {
         Debug.Log("Here is the Start function of class NaiveRayTracer");
-        Camera this_camera = gameObject.GetComponent<Camera>();
-        Debug.Assert(this_camera);
-        canvasWidth = this_camera.pixelWidth;
-        canvasHeight = this_camera.pixelHeight;
+        Camera thisCamera = gameObject.GetComponent<Camera>();
+        Debug.Assert(thisCamera);
+        canvasWidth = thisCamera.pixelWidth;
+        canvasHeight = thisCamera.pixelHeight;
         Debug.Log("canvasWidth: " + canvasWidth);
         Debug.Log("canvasHeight: " + canvasHeight);
         renderedResult = new Texture2D(canvasWidth, canvasHeight);
@@ -137,7 +137,7 @@ public class NaiveRayTracer : MonoBehaviour
     {
         /*
         Vector3 origin - origin point of the ray
-        Vector3 direction - the direction of ray
+        Vector3 direction - the direction of the ray
         Vector3 sphereCenter - center of target sphere
         float sphereRadius - radius of target sphere
         out float t - distance the ray travelled to hit a point
@@ -158,7 +158,7 @@ public class NaiveRayTracer : MonoBehaviour
     {
         /*
         Vector3 origin - origin point of the ray
-        Vector3 direction - the direction of ray
+        Vector3 direction - the direction of the ray
         vA, vB, vC - 3 vertices of the target triangle
         out float t - distance the ray travelled to hit a point
         out Vector3 barycentricCoordinate - you should know what this is

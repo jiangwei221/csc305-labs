@@ -20,10 +20,10 @@ public class Checkboard : MonoBehaviour
     void Start()
     {
         Debug.Log("Here is the Start of class Ckechboard");
-        Camera this_camera = gameObject.GetComponent<Camera>();
-        Debug.Assert(this_camera);
-        int canvasWidth = this_camera.pixelWidth;
-        int canvasHeight = this_camera.pixelHeight;
+        Camera thisCamera = gameObject.GetComponent<Camera>();
+        Debug.Assert(thisCamera);
+        int canvasWidth = thisCamera.pixelWidth;
+        int canvasHeight = thisCamera.pixelHeight;
         checkboardResult = new Texture2D(canvasWidth, canvasHeight);
         #region Generate a black and white checker pattern
         // in frame coordinates
