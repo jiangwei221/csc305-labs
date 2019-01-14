@@ -66,6 +66,7 @@ public class NaiveRayTracer : MonoBehaviour
         // x axis grow from left to right
         // y axis grow from lower to upper
         for (int y = 0; y < canvasHeight; ++y)
+        {
             for (int x = 0; x < canvasWidth; ++x)
             {
                 int blockSize = 100;
@@ -74,6 +75,7 @@ public class NaiveRayTracer : MonoBehaviour
                 checkboardResult.SetPixel(x, y,
                     (xblock + yblock) % 2 == 0 ? new Color(255, 0, 0) : Color.white);
             }
+        }
         checkboardResult.Apply();
         #endregion
 

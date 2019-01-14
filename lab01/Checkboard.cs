@@ -30,6 +30,7 @@ public class Checkboard : MonoBehaviour
         // x axis grow from left to right
         // y axis grow from lower to upper
         for (int y = 0; y < canvasHeight; ++y)
+        {
             for (int x = 0; x < canvasWidth; ++x)
             {
                 int blockSize = 100;
@@ -40,7 +41,8 @@ public class Checkboard : MonoBehaviour
                 //if(y < canvasHeight / 2)
                     //checkboardResult.SetPixel(x, y, Color.black);
             }
-
+        }
+        
         checkboardResult.Apply();
         #endregion
     }
