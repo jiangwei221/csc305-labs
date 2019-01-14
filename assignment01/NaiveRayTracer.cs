@@ -43,25 +43,21 @@ namespace Assignment01
             {
                 CheckboardGenerator myRenderer = new CheckboardGenerator();
                 renderedResult = myRenderer.GenCheckboard(canvasWidth, canvasHeight);
-                //renderedResult = GenCheckboard(canvasWidth, canvasHeight);
             }
             else if (renderMethod == "sphere")
             {
                 SphereGenerator myRenderer = new SphereGenerator();
                 renderedResult = myRenderer.GenSphere(canvasWidth, canvasHeight);
-                //renderedResult = GenSphere(canvasWidth, canvasHeight);
             }
             else if (renderMethod == "barycentric")
             {
                 CubeGenerator myRenderer = new CubeGenerator();
                 renderedResult = myRenderer.GenBarycentricVis(canvasWidth, canvasHeight);
-                //renderedResult = GenBarycentricVis(canvasWidth, canvasHeight);
             }
             else if (renderMethod == "uvmapping")
             {
                 CubeGenerator myRenderer = new CubeGenerator();
                 renderedResult = myRenderer.GenUVMapping(canvasWidth, canvasHeight, textureOnCube);
-                //renderedResult = GenUVMapping(canvasWidth, canvasHeight);
             }
             else
                 throw new NotImplementedException();
