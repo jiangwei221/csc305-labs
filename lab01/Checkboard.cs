@@ -39,7 +39,7 @@ namespace lab01
                     int xblock = x / blockSize;
                     int yblock = y / blockSize;
                     checkboardResult.SetPixel(x, y,
-                        (xblock + yblock) % 2 == 0 ? new Color(255,0,0) : Color.white);
+                        (xblock + yblock) % 2 == 0 ? new Color(1,0,0) : Color.white);
                     //if(y < canvasHeight / 2)
                         //checkboardResult.SetPixel(x, y, Color.black);
                 }
