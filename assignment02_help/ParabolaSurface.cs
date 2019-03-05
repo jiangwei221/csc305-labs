@@ -14,7 +14,7 @@ public class ParabolaSurface : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         MeshRenderer renderer = gameObject.GetComponent<MeshRenderer>();
-        //renderer.material = simpleMaterial;
+        renderer.material = simpleMaterial;
         GenerateParabolaSurface();
 	}
 	

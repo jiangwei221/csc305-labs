@@ -2,7 +2,7 @@
 //
 //Helping lab for assignment02
 
-Shader "Unlit/simpleMaterial"
+Shader "Unlit/simpleShader"
 {
 	Properties
 	{
