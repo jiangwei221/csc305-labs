@@ -45,7 +45,7 @@ public class CubeController : MonoBehaviour
                 GameObject instPrefab = Instantiate(cubePrefab);
                 instPrefab.transform.parent = newCube.transform;
 
-                Vector3 startingPos = new Vector3((float)j - 4, (float)-3, (float)i - 4);//Random_Unitsphere() * FlockRadius;
+                Vector3 startingPos = new Vector3((float)j - 4, (float)-3, (float)i - 4);
                 CubeStatus status = new CubeStatus();
                 status.position = startingPos + goalMarker.transform.position;
                 newCube.transform.position = status.position;
@@ -54,7 +54,6 @@ public class CubeController : MonoBehaviour
                 statusList.Add(status);
             }
         }
-        //hide the original prefab
         cubePrefab.SetActive(false);
     }
 
