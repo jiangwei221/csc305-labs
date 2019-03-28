@@ -15,10 +15,6 @@ public class CubeController : MonoBehaviour
     public GameObject goalMarker;
     int boidCount = 10;
 
-
-    private List<GameObject> cubesList;
-
-
     private class CubeStatus
     {
         public Vector3 position;
@@ -30,9 +26,6 @@ public class CubeController : MonoBehaviour
     void Start()
     {
 
-
-        //Instantiate Boids
-        cubesList = new List<GameObject>();
         statusList = new List<CubeStatus>();
         for (int i = 0; i < boidCount; ++i)
         {
@@ -50,7 +43,6 @@ public class CubeController : MonoBehaviour
                 status.position = startingPos + goalMarker.transform.position;
                 newCube.transform.position = status.position;
                 status.boidObject = newCube;
-                cubesList.Add(newCube);
                 statusList.Add(status);
             }
         }
